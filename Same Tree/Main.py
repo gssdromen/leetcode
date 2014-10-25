@@ -1,43 +1,35 @@
 class Solution:
-    # @param p, a tree node
-    # @param q, a tree node
-    # @return a boolean
-    
+    # @return an integer
+    def reverse(self, x):
+        input = str(x)
+        output = ""
+        if input=='0':
+            print 0
+        if input[0] == '-':
+            isFirstZero = True
+            output += str(input[0])
+            for i in range(len(input)-1):
+                thisone = str(input[-(i+1)])
+                if thisone == '0' and isFirstZero:
+                    pass
+                else:
+                    output += thisone
+                    isFirstZero =False
+            print int(output)
+        else:
+            isFirstZero = True
+            for i in range(len(input)):
+                thisone = str(input[-(i+1)])
+                if thisone == '0' and isFirstZero:
+                    pass
+                else:
+                    output += thisone
+                    isFirstZero =False
+            print int(output)
 
-    a=[]
-    b=[]
-        
-    def getListFromTreeA(self, p):
-        if p == None:
-            return
-        if (p.left != None):
-            self.getListFromTreeA(p.left)
-        print "a:" + str(p.val)
-        self.a.append(p.val)
-        if (p.right != None):
-            self.getListFromTreeA(p.right)
-        return
-        
-    def getListFromTreeB(self, p):
-        if p == None:
-            return
-        if (p.left != None):
-            self.getListFromTreeB(p.left)
-        print "b:" + str(p.val)
-        self.b.append(p.val)
-        if (p.right != None):
-            self.getListFromTreeB(p.right)
-        return
-    
-    def isSameTree(self, p, q):
-        self.getListFromTreeA(p)
-        self.getListFromTreeB(q)
-        if len(self.a) != len(self.b):
-            return False
-        for i in range(len(self.a)):
-            if self.a[i] != self.b[i]:
-                return False
-        return True
 
-su = Solution()
-su.isSameTree({0,1,2},(0,1,2))
+su =Solution()
+su.reverse(0)
+su.reverse(-100)
+su.reverse(123)
+su.reverse(100)
