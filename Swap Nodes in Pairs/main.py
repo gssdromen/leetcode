@@ -8,4 +8,6 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     def swapPairs(self, head):
-
+        pre = ListNode(99)
+        pre.next = head
+        while head is not None
