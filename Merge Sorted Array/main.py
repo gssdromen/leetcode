@@ -7,13 +7,12 @@ class Solution:
     def merge(self, A, m, B, n):
         startIndex=0
         for num in B:
-            print "==="
-            for i in range(0,m):
-                print i
-                if m == 0:
-                    A.insert(i,num)
-                    m=m+1
-                elif num<A[i]:
+            if m == 0:
+                A.insert(m,num)
+                m=m+1
+                continue
+            for i in range(startIndex,m):
+                if num<A[i]:
                     A.insert(i,num)
                     m=m+1
                     startIndex=i
@@ -26,5 +25,6 @@ class Solution:
         return A
 
 su = Solution()
+print su.merge([],0,[1,2,3,4,5],5)
 # print su.merge([],0,[1],1)
-print su.merge([1,2,3,0,0,0],3,[2,5,6],3)
+# print su.merge([1,2,3,0,0,0],3,[2,5,6],3)
