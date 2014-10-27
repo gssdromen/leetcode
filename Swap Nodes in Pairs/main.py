@@ -19,3 +19,4 @@ class Solution:
             pre = cur
             cur = cur.next
         return head.next
+
