@@ -1,9 +1,9 @@
 # Definition for a  binary tree node
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
 class Solution:
@@ -11,25 +11,37 @@ class Solution:
         self.result = []
         self.curList = []
         self.nextList = []
-        
+
     # @param root, a tree node
     # @return a list of lists of integers
     def levelOrder(self, root):
         if root is None:
             return self.result
-        self.curList.append(root)
-        self.helper(self.curList)
+        self.nextList.append(root)
+        self.helper(self.nextList)
         return self.result
 
     def helper(self, nodeList):
-        del self.nextList[:]
-        self.nextList[:] = []
+        # print nodeList
+        self.nextList = []
+        # print nodeList
         answer = []
-        for node in self.curList:
+        for node in nodeList:
             if node is not None:
                 answer.append(node.val)
-                self.nextList.append(node.left)
-                self.nextList.append(node.right)
-        self.result.append(answer)
-        self.helper(self.nextList)
+                if node.left is not None:
+                    # print node.left.val
+                    self.nextList.append(node.left)
+                if node.right is not None:
+                    self.nextList.append(node.right)
+        if len(answer) != 0:
+            self.result.append(answer)
+        if len(self.nextList) != 0:
+            self.helper(self.nextList)
+
+su = Solution()
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+print su.levelOrder(root)
 
