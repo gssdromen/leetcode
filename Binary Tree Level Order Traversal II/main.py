@@ -14,11 +14,12 @@ class Solution:
 
     # @param root, a tree node
     # @return a list of lists of integers
-    def levelOrder(self, root):
+    def levelOrderBottom(self, root):
         if root is None:
             return self.result
         self.nextList.append(root)
         self.helper(self.nextList)
+        self.result.reverse()
         return self.result
 
     def helper(self, nodeList):

@@ -14,12 +14,17 @@ class Solution:
 
     # @param root, a tree node
     # @return a list of lists of integers
-    def levelOrder(self, root):
+    def connect(self, root):
         if root is None:
             return self.result
         self.nextList.append(root)
         self.helper(self.nextList)
-        return self.result
+        for aList in self.result:
+            for i in range(len(aList)):
+                if i != len(aList)-1:
+                    aList[i].next = aList[i+1]
+                else:
+                    aList[i].next = None
 
     def helper(self, nodeList):
         # print nodeList
@@ -28,7 +33,7 @@ class Solution:
         answer = []
         for node in nodeList:
             if node is not None:
-                answer.append(node.val)
+                answer.append(node)
                 if node.left is not None:
                     # print node.left.val
                     self.nextList.append(node.left)
