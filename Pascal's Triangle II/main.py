@@ -17,3 +17,10 @@ class Solution:
                     temp.append(prev[m] + prev[m+1])
             self.result = temp
         return self.result
+
+
+su = Solution()
+su.getRow(0)
+su.getRow(1)
+su.getRow(2)
+su.getRow(3)

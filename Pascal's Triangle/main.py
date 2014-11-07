@@ -19,3 +19,7 @@ class Solution:
                     temp.append(prev[m] + prev[m+1])
             self.result.append(temp)
         return self.result
+
+
+su = Solution()
+su.generate(7)
