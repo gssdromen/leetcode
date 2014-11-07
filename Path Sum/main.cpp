@@ -17,10 +17,16 @@ public:
 
     }
 
-    int helper(TreeNode *root,int sum, int num) {
-        if num>sum:
-            return
+    bool helper(TreeNode *root,int sum, int num) {
+        if (root == NULL){return;}
+        if (num>sum || num+root->val>sum){return;}
+        if (num+root->val == sum){
+            return true;
+        }else{
+            helper(root->left, sum, num+root->val);
+            helper(root->right, sum, num+root->val);
 
+        }
     }
 };
 
