@@ -6,3 +6,6 @@ class Solution:
         for x in A:
             result ^= x
         return result
+
+ss = Solution()
+print ss.singleNumber([1,1,2,3,3])
