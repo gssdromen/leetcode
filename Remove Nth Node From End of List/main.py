@@ -7,17 +7,19 @@ class ListNode:
 class Solution:
     # @return a ListNode
     def removeNthFromEnd(self, head, n):
-        if head.next is None and n == 1:
-            return None
-        start = head
+        # if head.next is None and n == 1:
+        #     return None
+        start = ListNode(0)
+        start.next = head
+        prev = start
         while head is not None:
             nextn = self.getNNext(head, n)
             if nextn is None:
                 prev.next = head.next
+                return start.next
             else:
                 prev = head
-            head = head.next
-        return start
+                head = head.next
 
     def getNNext(self, head, n):
         for i in range(n):
@@ -27,4 +29,4 @@ class Solution:
 ss = Solution()
 root = ListNode(1)
 root.next = ListNode(2)
-print ss.removeNthFromEnd(root, 1)
+print ss.removeNthFromEnd(root, 2)
