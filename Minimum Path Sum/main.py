@@ -1,5 +1,3 @@
-# coding=utf-8
-
 class Solution:
     # @param grid, a list of lists of integers
     # @return an integer
@@ -24,8 +22,3 @@ class Solution:
                 else:
                     self.result[i][j] = min(self.result[i-1][j], self.result[i][j-1]) + grid[i-1][j-1]
         return self.result[m][n]
-
-
-ss = Solution()
-ss.minPathSum([[1, 2, 3],[4, 5, 6],[7, 8, 9]])
-# ss.minPathSum([[1],[4],[7]])
