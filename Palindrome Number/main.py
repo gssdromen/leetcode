@@ -7,3 +7,7 @@ class Solution:
             palindromeX = palindromeX*10 + (x % 10)
             x = x/10
         return palindromeX==inputX
+
+
+ss = Solution()
+ss.isPalindrome(123)
