@@ -69,45 +69,28 @@ func minWindow(s string, t string) string {
 }
 
 func minWindow(s string, t string) string {
-	needs := make(map[uint8]int)
-	includes := make(map[uint8]int)
-	for i := range t {
-		if _, ok := needs[t[i]]; !ok {
-			needs[t[i]] = 1
-		} else {
-			needs[t[i]]++
-		}
-		includes[t[i]] = 0
+	window, need := make(map[string]int), make(map[string]int)
+	for _, v := range t {
+		need[string(v)]++
 	}
-
 	left, right := 0, 0
-	valid := 0
-	minLength, start := 0, 0
+	count, min := 0, len(s)+1
+	res := ""
 	for right < len(s) {
-		if _, ok := includes[s[right]]; ok {
-			includes[s[right]]++
-			if includes[s[right]] == needs[s[right]] {
-				valid++
-			}
+		if window[string(s[right])] < need[string(s[right])] {
+			count++
 		}
-		right++
-
-		for valid == len(needs) {
-			if minLength == 0 || minLength > right-left {
-				minLength = right - left
-				start = left
-			}
-			if _, ok := includes[s[left]]; ok {
-				if includes[s[left]] == needs[s[left]] {
-					valid--
-				}
-				includes[s[left]]--
-			}
+		window[string(s[right])]++
+		for left < right && window[string(s[left])] > need[string(s[left])] {
+			window[string(s[left])]--
 			left++
 		}
+		width := right - left + 1
+		if count == len(t) && min > width {
+			min = width
+			res = s[left : right+1]
+		}
+		right++
 	}
-	if minLength == 0 {
-		return ""
-	}
-	return s[start : start+minLength]
+	return res
 }
