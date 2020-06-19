@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5fb9ead-fa48-4e78-b7e2-5037ebc85f49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../238. 除自身以外数组的乘积/MyPlayground.playground/Contents.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../238. 除自身以外数组的乘积/MyPlayground.playground/contents.xcplayground" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="07uuwxgg" />
+  </component>
+  <component name="ProjectId" id="1dWeYK4Rs6IpZWBTrgf4DRGg1gy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5fb9ead-fa48-4e78-b7e2-5037ebc85f49" name="Default Changelist" comment="" />
+      <created>1592545322651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592545322651</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="377" y="175" key="SettingsEditor" timestamp="1592545473984">
+      <screen x="69" y="23" width="1611" height="1027" />
+    </state>
+    <state x="377" y="175" key="SettingsEditor/69.23.1611.1027@69.23.1611.1027" timestamp="1592545473984" />
+  </component>
+</project>
