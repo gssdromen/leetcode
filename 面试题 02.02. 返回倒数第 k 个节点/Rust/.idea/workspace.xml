@@ -4,7 +4,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ab9b94e-4479-4a8f-9c4b-94a2a57576f4" name="Default Changelist" comment="" />
+    <list default="true" id="d5ea29d5-2a83-4cb5-8a6a-f41d9058b62b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../1486. 数组异或操作/Rust/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../1486. 数组异或操作/Rust/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="2eqz7qvg" />
+    <option name="directoryName" value="j86snvfh" />
   </component>
-  <component name="ProjectId" id="1dhxUq80D9eKUz4ONv8FBYchNy1" />
+  <component name="ProjectId" id="1diF5ujRs8Fm2grtFIYuQ9qSaF4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,12 +39,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ab9b94e-4479-4a8f-9c4b-94a2a57576f4" name="Default Changelist" comment="" />
-      <created>1592891144241</created>
+      <changelist id="d5ea29d5-2a83-4cb5-8a6a-f41d9058b62b" name="Default Changelist" comment="" />
+      <created>1592899826558</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592891144241</updated>
+      <updated>1592899826558</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="377" y="175" key="SettingsEditor" timestamp="1592905242063">
+      <screen x="69" y="23" width="1611" height="1027" />
+    </state>
+    <state x="377" y="175" key="SettingsEditor/69.23.1611.1027@69.23.1611.1027" timestamp="1592905242063" />
   </component>
 </project>
