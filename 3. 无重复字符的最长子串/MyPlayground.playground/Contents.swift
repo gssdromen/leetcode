@@ -19,27 +19,27 @@ class Solution {
         return maxStr.count
     }
 
-    func lengthOfLongestSubstring(_ s: String) -> Int {
-        var left = 0
-        var right = 0
-        var length = 0
-
-        var set = Set<Character>()
-
-        while right < s.count {
-            let rightC = s[s.index(s.startIndex, offsetBy: right)]
-            if !set.contains(rightC) {
-                set.insert(rightC)
-                length = max(right - left + 1, length)
-                right += 1
-            } else {
-                let leftC = s[s.index(s.startIndex, offsetBy: left)]
-                set.remove(leftC)
-                left += 1
-            }
-        }
-        return length
-    }
+//    func lengthOfLongestSubstring(_ s: String) -> Int {
+//        var left = 0
+//        var right = 0
+//        var length = 0
+//
+//        var set = Set<Character>()
+//
+//        while right < s.count {
+//            let rightC = s[s.index(s.startIndex, offsetBy: right)]
+//            if !set.contains(rightC) {
+//                set.insert(rightC)
+//                length = max(right - left + 1, length)
+//                right += 1
+//            } else {
+//                let leftC = s[s.index(s.startIndex, offsetBy: left)]
+//                set.remove(leftC)
+//                left += 1
+//            }
+//        }
+//        return length
+//    }
 }
 
 let s = Solution()
