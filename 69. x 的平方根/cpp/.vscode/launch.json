@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/cedric/Workspaces/leetcode/69. x 的平方根/cpp",
+      "program": "/Users/cedric/Workspaces/leetcode/69. x 的平方根/cpp/build/Debug/outDebug"
+    }
+  ]
+}
