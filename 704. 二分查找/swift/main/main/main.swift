@@ -1,0 +1,35 @@
+//
+//  main.swift
+//  main
+//
+//  Created by ByteDance on 4/24/25.
+//
+
+import Foundation
+
+class Solution {
+    func search(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0
+        var right = nums.count - 1
+
+        while left <= right {
+            let mid = (left + right) / 2
+            guard mid < nums.count else { return -1 }
+
+            if nums[mid] < target {
+                left = mid + 1
+            } else if nums[mid] > target {
+                right = mid - 1
+            } else {
+                return mid
+            }
+
+
+        }
+        return -1
+    }
+}
+
+let s = Solution()
+
+print(s.search([1, 2, 3], 3))
