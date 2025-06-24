@@ -21,6 +21,7 @@ public class TreeNode {
 }
 
 class Solution {
+    // 递归法
     func maxDepth(_ root: TreeNode?) -> Int {
         if root == nil {
             return 0
@@ -33,3 +34,40 @@ class Solution {
         return count
     }
 }
+
+class Solution2 {
+    // 非递归法
+    func maxDepth(_ root: TreeNode?) -> Int {
+        guard let root = root else {
+            return 0
+        }
+        var list = [TreeNode]()
+        list.append(root)
+        var maxDepth = 0
+        while !list.isEmpty {
+            var node = list.popLast()
+            maxDepth += 1
+            if let right = node?.right {
+                list.append(right)
+            }
+            if let left = node?.left {
+                list.append(left)
+            }
+        }
+        return maxDepth
+    }
+}
+
+let s = Solution2()
+var root = TreeNode(3)
+var node20 = TreeNode(20)
+var node15 = TreeNode(15)
+var node7 = TreeNode(7)
+var node9 = TreeNode(9)
+
+node20.left = node15
+node20.right = node7
+root.left = node9
+root.right = node20
+
+print(s.maxDepth(root))
