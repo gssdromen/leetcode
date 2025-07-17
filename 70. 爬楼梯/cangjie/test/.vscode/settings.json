@@ -1,0 +1,22 @@
+{
+	"CangjieSdk.Option": "CJNative",
+	"terminal.integrated.env.osx": {
+		"CANGJIE_HOME": "/Users/cedricwu/Tools/cangjie",
+		"CANGJIE_PATH": "/Users/cedricwu/Tools/cangjie/bin:/Users/cedricwu/Tools/cangjie/tools/bin:/Users/cedricwu/Tools/cangjie/debugger/bin:/Users/cedricwu/.cjpm/bin",
+		"CANGJIE_LD_LIBRARY_PATH": "/Users/cedricwu/Tools/cangjie/runtime/lib/darwin_x86_64_llvm:/Users/cedricwu/Tools/cangjie/tools/lib:",
+		"DYLD_LIBRARY_PATH": "${config:terminal.integrated.env.osx.CANGJIE_LD_LIBRARY_PATH}:${env:DYLD_LIBRARY_PATH}",
+		"SDKROOT": "/Applications/Xcode-16.1.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+		"PATH": "${config:terminal.integrated.env.osx.CANGJIE_PATH}:${env:PATH}"
+	},
+	"editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.selectionHighlight": false,
+	"files.autoSave": "onFocusChange",
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": "on"
+	}
+}
