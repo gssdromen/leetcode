@@ -1,0 +1,4 @@
+module(
+    name = "leetcode_cpp_bazel",
+    version = "1.0",
+)

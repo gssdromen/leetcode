@@ -1,1 +1,51 @@
-target
+# =========================
+# Rust / Cargo
+# =========================
+**/target/
+/Cargo.lock
+**/*.rs.bk
+
+# Rust logs & profiling
+*.log
+*.profraw
+*.profdata
+
+# IDE build caches
+/.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Bazel
+# =========================
+bazel-*
+/bazel-bin/
+/bazel-out/
+/bazel-testlogs/
+/bazel-leetcode_*/
+
+# =========================
+# macOS 系统文件
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Linux / macOS 临时文件
+# =========================
+*.tmp
+*.temp
+*~
+*.bak
+
+# =========================
+# 编译中间产物
+# =========================
+*.o
+*.so
+*.rlib
+*.dll
+*.exe
+*.dSYM/
